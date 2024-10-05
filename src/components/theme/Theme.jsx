@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaMoon, FaSun } from 'react-icons/fa6';
+import { Link } from 'react-router-dom'; // Make sure to import Link
 
 
 const Theme = () => {
@@ -20,7 +21,7 @@ const Theme = () => {
     }
 
     return (
-        <button onClick={toggleTheme} className='dark:text-neutral-100 text-neutral-800 text-lg w-10 h-10 rounded-full bg-neutral-200 dark:bg-neutral-800/80 flex items-center justify-center'>
+        <button onClick={toggleTheme} className='dark:text-neutral-100 text-neutral-800 text-lg w-10 h-10 rounded-full bg-neutral-200 dark:bg-red-800/80 flex items-center justify-center'>
             {
                 theme === 'dark'
                     ?
